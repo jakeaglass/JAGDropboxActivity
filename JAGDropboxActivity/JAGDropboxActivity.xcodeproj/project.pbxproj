@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7D9A5751899EB17000DF82E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D9A5741899EB17000DF82E /* Foundation.framework */; };
+		D7D9A5771899EB17000DF82E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D9A5761899EB17000DF82E /* CoreGraphics.framework */; };
+		D7D9A5791899EB17000DF82E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D9A5781899EB17000DF82E /* UIKit.framework */; };
+		D7D9A57F1899EB17000DF82E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7D9A57D1899EB17000DF82E /* InfoPlist.strings */; };
+		D7D9A5811899EB17000DF82E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D9A5801899EB17000DF82E /* main.m */; };
+		D7D9A5851899EB17000DF82E /* JAGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D9A5841899EB17000DF82E /* JAGAppDelegate.m */; };
+		D7D9A5871899EB17000DF82E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D9A5861899EB17000DF82E /* Images.xcassets */; };
+		D7D9A58E1899EB17000DF82E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D9A58D1899EB17000DF82E /* XCTest.framework */; };
+		D7D9A58F1899EB17000DF82E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D9A5741899EB17000DF82E /* Foundation.framework */; };
+		D7D9A5901899EB17000DF82E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D9A5781899EB17000DF82E /* UIKit.framework */; };
+		D7D9A5981899EB17000DF82E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7D9A5961899EB17000DF82E /* InfoPlist.strings */; };
+		D7D9A59A1899EB17000DF82E /* JAGDropboxActivityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D9A5991899EB17000DF82E /* JAGDropboxActivityTests.m */; };
+		D7D9A5A51899EB37000DF82E /* JAGDropboxActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D9A5A41899EB37000DF82E /* JAGDropboxActivity.m */; };
+		D7D9A5A71899EB78000DF82E /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D9A5A61899EB78000DF82E /* DropboxSDK.framework */; };
+		D7D9A5AA1899EBB6000DF82E /* JAGDirectoryPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D9A5A91899EBB6000DF82E /* JAGDirectoryPicker.m */; };
+		D7D9A5AD1899ECCB000DF82E /* dropboxShareActivity-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = D7D9A5AB1899ECCB000DF82E /* dropboxShareActivity-iPad.png */; };
+		D7D9A5AE1899ECCB000DF82E /* dropboxShareActivity-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7D9A5AC1899ECCB000DF82E /* dropboxShareActivity-iPad@2x.png */; };
+		D7D9A5B11899EF3C000DF82E /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D9A5B01899EF3C000DF82E /* MBProgressHUD.m */; };
+		D7D9A5B41899F107000DF82E /* JAGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D9A5B31899F107000DF82E /* JAGViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7D9A5911899EB17000DF82E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7D9A5691899EB17000DF82E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7D9A5701899EB17000DF82E;
+			remoteInfo = JAGDropboxActivity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D7D9A5711899EB17000DF82E /* JAGDropboxActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JAGDropboxActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7D9A5741899EB17000DF82E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D7D9A5761899EB17000DF82E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D7D9A5781899EB17000DF82E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D7D9A57C1899EB17000DF82E /* JAGDropboxActivity-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JAGDropboxActivity-Info.plist"; sourceTree = "<group>"; };
+		D7D9A57E1899EB17000DF82E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D7D9A5801899EB17000DF82E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D7D9A5821899EB17000DF82E /* JAGDropboxActivity-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JAGDropboxActivity-Prefix.pch"; sourceTree = "<group>"; };
+		D7D9A5831899EB17000DF82E /* JAGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAGAppDelegate.h; sourceTree = "<group>"; };
+		D7D9A5841899EB17000DF82E /* JAGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAGAppDelegate.m; sourceTree = "<group>"; };
+		D7D9A5861899EB17000DF82E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D7D9A58C1899EB17000DF82E /* JAGDropboxActivityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JAGDropboxActivityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7D9A58D1899EB17000DF82E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D7D9A5951899EB17000DF82E /* JAGDropboxActivityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JAGDropboxActivityTests-Info.plist"; sourceTree = "<group>"; };
+		D7D9A5971899EB17000DF82E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D7D9A5991899EB17000DF82E /* JAGDropboxActivityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAGDropboxActivityTests.m; sourceTree = "<group>"; };
+		D7D9A5A31899EB37000DF82E /* JAGDropboxActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAGDropboxActivity.h; sourceTree = "<group>"; };
+		D7D9A5A41899EB37000DF82E /* JAGDropboxActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAGDropboxActivity.m; sourceTree = "<group>"; };
+		D7D9A5A61899EB78000DF82E /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
+		D7D9A5A81899EBB6000DF82E /* JAGDirectoryPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAGDirectoryPicker.h; sourceTree = "<group>"; };
+		D7D9A5A91899EBB6000DF82E /* JAGDirectoryPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAGDirectoryPicker.m; sourceTree = "<group>"; };
+		D7D9A5AB1899ECCB000DF82E /* dropboxShareActivity-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dropboxShareActivity-iPad.png"; sourceTree = "<group>"; };
+		D7D9A5AC1899ECCB000DF82E /* dropboxShareActivity-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dropboxShareActivity-iPad@2x.png"; sourceTree = "<group>"; };
+		D7D9A5AF1899EF3C000DF82E /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		D7D9A5B01899EF3C000DF82E /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		D7D9A5B21899F107000DF82E /* JAGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAGViewController.h; sourceTree = "<group>"; };
+		D7D9A5B31899F107000DF82E /* JAGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAGViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7D9A56E1899EB17000DF82E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7D9A5A71899EB78000DF82E /* DropboxSDK.framework in Frameworks */,
+				D7D9A5771899EB17000DF82E /* CoreGraphics.framework in Frameworks */,
+				D7D9A5791899EB17000DF82E /* UIKit.framework in Frameworks */,
+				D7D9A5751899EB17000DF82E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7D9A5891899EB17000DF82E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7D9A58E1899EB17000DF82E /* XCTest.framework in Frameworks */,
+				D7D9A5901899EB17000DF82E /* UIKit.framework in Frameworks */,
+				D7D9A58F1899EB17000DF82E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7D9A5681899EB17000DF82E = {
+			isa = PBXGroup;
+			children = (
+				D7D9A57A1899EB17000DF82E /* JAGDropboxActivity */,
+				D7D9A5931899EB17000DF82E /* JAGDropboxActivityTests */,
+				D7D9A5731899EB17000DF82E /* Frameworks */,
+				D7D9A5721899EB17000DF82E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7D9A5721899EB17000DF82E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7D9A5711899EB17000DF82E /* JAGDropboxActivity.app */,
+				D7D9A58C1899EB17000DF82E /* JAGDropboxActivityTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7D9A5731899EB17000DF82E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7D9A5741899EB17000DF82E /* Foundation.framework */,
+				D7D9A5761899EB17000DF82E /* CoreGraphics.framework */,
+				D7D9A5781899EB17000DF82E /* UIKit.framework */,
+				D7D9A58D1899EB17000DF82E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7D9A57A1899EB17000DF82E /* JAGDropboxActivity */ = {
+			isa = PBXGroup;
+			children = (
+				D7D9A5831899EB17000DF82E /* JAGAppDelegate.h */,
+				D7D9A5841899EB17000DF82E /* JAGAppDelegate.m */,
+				D7D9A5B21899F107000DF82E /* JAGViewController.h */,
+				D7D9A5B31899F107000DF82E /* JAGViewController.m */,
+				D7D9A5A31899EB37000DF82E /* JAGDropboxActivity.h */,
+				D7D9A5A41899EB37000DF82E /* JAGDropboxActivity.m */,
+				D7D9A5A81899EBB6000DF82E /* JAGDirectoryPicker.h */,
+				D7D9A5A91899EBB6000DF82E /* JAGDirectoryPicker.m */,
+				D7D9A5AB1899ECCB000DF82E /* dropboxShareActivity-iPad.png */,
+				D7D9A5AC1899ECCB000DF82E /* dropboxShareActivity-iPad@2x.png */,
+				D7D9A5AF1899EF3C000DF82E /* MBProgressHUD.h */,
+				D7D9A5B01899EF3C000DF82E /* MBProgressHUD.m */,
+				D7D9A5861899EB17000DF82E /* Images.xcassets */,
+				D7D9A5A61899EB78000DF82E /* DropboxSDK.framework */,
+				D7D9A57B1899EB17000DF82E /* Supporting Files */,
+			);
+			path = JAGDropboxActivity;
+			sourceTree = "<group>";
+		};
+		D7D9A57B1899EB17000DF82E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7D9A57C1899EB17000DF82E /* JAGDropboxActivity-Info.plist */,
+				D7D9A57D1899EB17000DF82E /* InfoPlist.strings */,
+				D7D9A5801899EB17000DF82E /* main.m */,
+				D7D9A5821899EB17000DF82E /* JAGDropboxActivity-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7D9A5931899EB17000DF82E /* JAGDropboxActivityTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7D9A5991899EB17000DF82E /* JAGDropboxActivityTests.m */,
+				D7D9A5941899EB17000DF82E /* Supporting Files */,
+			);
+			path = JAGDropboxActivityTests;
+			sourceTree = "<group>";
+		};
+		D7D9A5941899EB17000DF82E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7D9A5951899EB17000DF82E /* JAGDropboxActivityTests-Info.plist */,
+				D7D9A5961899EB17000DF82E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7D9A5701899EB17000DF82E /* JAGDropboxActivity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7D9A59D1899EB17000DF82E /* Build configuration list for PBXNativeTarget "JAGDropboxActivity" */;
+			buildPhases = (
+				D7D9A56D1899EB17000DF82E /* Sources */,
+				D7D9A56E1899EB17000DF82E /* Frameworks */,
+				D7D9A56F1899EB17000DF82E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JAGDropboxActivity;
+			productName = JAGDropboxActivity;
+			productReference = D7D9A5711899EB17000DF82E /* JAGDropboxActivity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7D9A58B1899EB17000DF82E /* JAGDropboxActivityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7D9A5A01899EB17000DF82E /* Build configuration list for PBXNativeTarget "JAGDropboxActivityTests" */;
+			buildPhases = (
+				D7D9A5881899EB17000DF82E /* Sources */,
+				D7D9A5891899EB17000DF82E /* Frameworks */,
+				D7D9A58A1899EB17000DF82E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7D9A5921899EB17000DF82E /* PBXTargetDependency */,
+			);
+			name = JAGDropboxActivityTests;
+			productName = JAGDropboxActivityTests;
+			productReference = D7D9A58C1899EB17000DF82E /* JAGDropboxActivityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7D9A5691899EB17000DF82E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JAG;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Jake Glass";
+				TargetAttributes = {
+					D7D9A58B1899EB17000DF82E = {
+						TestTargetID = D7D9A5701899EB17000DF82E;
+					};
+				};
+			};
+			buildConfigurationList = D7D9A56C1899EB17000DF82E /* Build configuration list for PBXProject "JAGDropboxActivity" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D7D9A5681899EB17000DF82E;
+			productRefGroup = D7D9A5721899EB17000DF82E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7D9A5701899EB17000DF82E /* JAGDropboxActivity */,
+				D7D9A58B1899EB17000DF82E /* JAGDropboxActivityTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7D9A56F1899EB17000DF82E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7D9A5AE1899ECCB000DF82E /* dropboxShareActivity-iPad@2x.png in Resources */,
+				D7D9A57F1899EB17000DF82E /* InfoPlist.strings in Resources */,
+				D7D9A5AD1899ECCB000DF82E /* dropboxShareActivity-iPad.png in Resources */,
+				D7D9A5871899EB17000DF82E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7D9A58A1899EB17000DF82E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7D9A5981899EB17000DF82E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7D9A56D1899EB17000DF82E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7D9A5811899EB17000DF82E /* main.m in Sources */,
+				D7D9A5B41899F107000DF82E /* JAGViewController.m in Sources */,
+				D7D9A5A51899EB37000DF82E /* JAGDropboxActivity.m in Sources */,
+				D7D9A5B11899EF3C000DF82E /* MBProgressHUD.m in Sources */,
+				D7D9A5851899EB17000DF82E /* JAGAppDelegate.m in Sources */,
+				D7D9A5AA1899EBB6000DF82E /* JAGDirectoryPicker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7D9A5881899EB17000DF82E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7D9A59A1899EB17000DF82E /* JAGDropboxActivityTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7D9A5921899EB17000DF82E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7D9A5701899EB17000DF82E /* JAGDropboxActivity */;
+			targetProxy = D7D9A5911899EB17000DF82E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7D9A57D1899EB17000DF82E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7D9A57E1899EB17000DF82E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D7D9A5961899EB17000DF82E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7D9A5971899EB17000DF82E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7D9A59B1899EB17000DF82E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7D9A59C1899EB17000DF82E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7D9A59E1899EB17000DF82E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jakeglass/Desktop/SQUEE!/JAGDropboxActivity/JAGDropboxActivity/JAGDropboxActivity",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JAGDropboxActivity/JAGDropboxActivity-Prefix.pch";
+				INFOPLIST_FILE = "JAGDropboxActivity/JAGDropboxActivity-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D7D9A59F1899EB17000DF82E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jakeglass/Desktop/SQUEE!/JAGDropboxActivity/JAGDropboxActivity/JAGDropboxActivity",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JAGDropboxActivity/JAGDropboxActivity-Prefix.pch";
+				INFOPLIST_FILE = "JAGDropboxActivity/JAGDropboxActivity-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D7D9A5A11899EB17000DF82E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JAGDropboxActivity.app/JAGDropboxActivity";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JAGDropboxActivity/JAGDropboxActivity-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JAGDropboxActivityTests/JAGDropboxActivityTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D7D9A5A21899EB17000DF82E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JAGDropboxActivity.app/JAGDropboxActivity";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JAGDropboxActivity/JAGDropboxActivity-Prefix.pch";
+				INFOPLIST_FILE = "JAGDropboxActivityTests/JAGDropboxActivityTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7D9A56C1899EB17000DF82E /* Build configuration list for PBXProject "JAGDropboxActivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7D9A59B1899EB17000DF82E /* Debug */,
+				D7D9A59C1899EB17000DF82E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7D9A59D1899EB17000DF82E /* Build configuration list for PBXNativeTarget "JAGDropboxActivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7D9A59E1899EB17000DF82E /* Debug */,
+				D7D9A59F1899EB17000DF82E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7D9A5A01899EB17000DF82E /* Build configuration list for PBXNativeTarget "JAGDropboxActivityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7D9A5A11899EB17000DF82E /* Debug */,
+				D7D9A5A21899EB17000DF82E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7D9A5691899EB17000DF82E /* Project object */;
+}
