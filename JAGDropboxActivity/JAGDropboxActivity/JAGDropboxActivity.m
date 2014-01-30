@@ -1,9 +1,8 @@
 //
-//  DropboxShareActivity.m
-//  ÜberHighlighter
+//  JAGDropboxActivity.m
 //
 //  Created by Jake Glass on 11/18/13.
-//  Copyright (c) 2013 Squee! Apps. All rights reserved.
+//  Copyright (c) 2013 Jake Glass. All rights reserved.
 //
 
 #import "JAGDropboxActivity.h"
@@ -50,26 +49,6 @@
 
 - (void)performActivity
 {
-    /*
-     //show a progress indicatour
-     UIActivityIndicatorView *uploadingIndicator=[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-     uploadingIndicator.backgroundColor=[UIColor grayColor];
-     uploadingIndicator.frame=CGRectMake(0, 0, 300, 300);
-     UILabel *loadingText=[[UILabel alloc]init];
-     loadingText.textColor=[UIColor whiteColor];
-     loadingText.frame=CGRectMake(75, 200, 250, 100);
-     loadingText.text=@"Loading...";
-     loadingText.font=[UIFont systemFontOfSize:35];
-     
-     [uploadingIndicator addSubview:loadingText];
-     uploadingIndicator.center = CGPointMake(768 / 2.0, 370.0);
-     
-     uploadingIndicator.layer.cornerRadius = 8;
-     uploadingIndicator.layer.masksToBounds = YES;
-     
-     [uploadingIndicator startAnimating];
-    [[[[UIApplication sharedApplication] keyWindow] rootViewController] presentViewController:uploadingIndicator animated:YES completion:nil];
-     */
     
     //DB session check
     DBSession* dbSession =
@@ -101,11 +80,10 @@
         [pickerNav setNavigationBarHidden:NO];
      //   pickerNav.navigationItem.title=@"Dropbox Directory";
         
-        directoryPicker.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc]initWithTitle:@"Save" style:UIBarButtonItemStyleDone target:self action:@selector(uploadFile)];
+    directoryPicker.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc]initWithTitle:@"Save" style:UIBarButtonItemStyleDone target:self action:@selector(uploadFile)];
+
+    [pickerNav addChildViewController:directoryPicker];
         
-     
-        
-     [pickerNav addChildViewController:directoryPicker];
     [[[[UIApplication sharedApplication] keyWindow] rootViewController] presentViewController:pickerNav
  animated:YES completion:nil];
 
@@ -122,29 +100,7 @@
 -(void)uploadFile
 {
     [pickerNav dismissViewControllerAnimated:YES completion:nil];
-    
-   /* //activity indicatour setup here
-    activityView=[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-    activityView.backgroundColor=[UIColor grayColor];
-    activityView.frame=CGRectMake(0, 0, 300, 300);
-    UILabel *loadingText=[[UILabel alloc]init];
-    loadingText.textColor=[UIColor whiteColor];
-    loadingText.frame=CGRectMake(75, 200, 250, 100);
-    loadingText.text=@"Loading...";
-    loadingText.font=[UIFont systemFontOfSize:35];
-    
-    [activityView addSubview:loadingText];
-    activityView.center = CGPointMake(768 / 2.0, 370.0);
-    
-    activityView.layer.cornerRadius = 8;
-    activityView.layer.masksToBounds = YES;
-    activityView.alpha=.4;
-    
-    [activityView startAnimating];
 
-    [[[[UIApplication sharedApplication] keyWindow] rootViewController].view addSubview:[UIProgress]];
-    */
-    
     [MBProgressHUD showHUDAddedTo:[[[UIApplication sharedApplication] keyWindow] rootViewController].view animated:YES];
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.01 * NSEC_PER_SEC);
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
@@ -165,6 +121,7 @@ loadMetadataFailedWithError:(NSError *)error {
 
 - (void)restClient:(DBRestClient*)client uploadedFile:(NSString*)destPath
               from:(NSString*)srcPath metadata:(DBMetadata*)metadata {
+    
     //shut up the indicator of loadingness
     [MBProgressHUD hideHUDForView:[[[UIApplication sharedApplication] keyWindow] rootViewController].view animated:YES];
     
@@ -174,7 +131,8 @@ loadMetadataFailedWithError:(NSError *)error {
 
 - (void)restClient:(DBRestClient*)client uploadFileFailedWithError:(NSError*)error {
     //shut up the indicator of loadingness
-    
+    [MBProgressHUD hideHUDForView:[[[UIApplication sharedApplication] keyWindow] rootViewController].view animated:YES];
+
     UIAlertView *sad=[[UIAlertView alloc]initWithTitle:@"Failed to Upload" message:[NSString stringWithFormat:@"File upload failed with error - %@", error] delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
     [sad show];
 }

@@ -1,9 +1,8 @@
 //
-//  SQUDirectoryPicker.m
-//  ÜberHighlighter
+//  JAGDirectoryPicker.m
 //
 //  Created by Jake Glass on 11/22/13.
-//  Copyright (c) 2013 Squee! Apps. All rights reserved.
+//  Copyright (c) 2013 Jake Glass. All rights reserved.
 //
 
 #import "JAGDirectoryPicker.h"
